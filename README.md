@@ -73,3 +73,55 @@ Controls flow using:
 decide_mode()
 ```
 - Adapts interview difficulty dynamically
+
+---
+
+## ⚙️ Key Design Decisions
+
+This system is built with thoughtful design choices to ensure flexibility, scalability, and ease of development.
+
+---
+
+### 1. Prompt Separation
+
+Prompts are stored in the `/prompts` directory.
+
+**Benefits:**
+- Easy to iterate and refine prompts
+- No need to modify core application code
+- Enables faster experimentation
+
+---
+
+### 2. JSON Evaluation
+
+The Evaluator Agent outputs responses in structured JSON format.
+
+**Enables:**
+- Consistent scoring mechanism  
+- Adaptive interview logic  
+- Easy integration with analytics pipelines  
+
+---
+
+### 3. Multi-Agent Design
+
+The system uses multiple specialized agents instead of a single LLM.
+
+**Advantages:**
+- Better modularity  
+- Clear separation of responsibilities  
+- Easier debugging and scaling  
+
+---
+
+### 4. Trade-offs
+
+| Decision            | Trade-off                                      |
+|--------------------|-----------------------------------------------|
+| Separate agents    | + Modular design, − More API calls            |
+| LLM evaluation     | + Flexible evaluation, − Possible inconsistency |
+| Streamlit UI       | + Fast prototyping, − Limited scalability     |
+
+---
+
