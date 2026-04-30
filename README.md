@@ -125,3 +125,55 @@ The system uses multiple specialized agents instead of a single LLM.
 
 ---
 
+## 🧪 Example Interview Transcripts
+
+Below are sample interactions demonstrating how the system evaluates different types of candidates.
+
+---
+
+### ✅ Strong Candidate
+
+**Q:** Explain overfitting  
+**A:** Overfitting occurs when a model learns noise instead of pattern...
+
+**Evaluation:**
+- Clarity: 9  
+- Depth: 8  
+- Correctness: 9  
+
+➡ **Next Step:**  
+- Increase difficulty  
+- Next question focuses on **regularization techniques**
+
+---
+
+### ❌ Weak Candidate
+
+**Q:** What is a hash map?  
+**A:** It stores data  
+
+**Evaluation:**
+- Clarity: 3  
+- Depth: 2  
+
+➡ **Next Step:**  
+- Ask a follow-up question  
+
+**Follow-up:**  
+> Can you explain how keys are mapped to values?
+
+---
+
+### ⚠️ Edge Case (Hallucination)
+
+**Q:** Explain gradient descent  
+**A:** It increases loss to find maximum  
+
+**Evaluation:**
+- Correctness: 1  
+
+➡ **Next Step:**  
+- Ask a corrective follow-up question  
+- Coach highlights conceptual misunderstanding  
+
+---
