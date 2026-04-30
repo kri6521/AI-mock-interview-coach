@@ -131,7 +131,7 @@ Below are sample interactions demonstrating how the system evaluates different t
 
 ---
 
-### ✅ Strong Candidate
+### Strong Candidate
 
 **Q:** Explain overfitting  
 **A:** Overfitting occurs when a model learns noise instead of pattern...
@@ -147,7 +147,7 @@ Below are sample interactions demonstrating how the system evaluates different t
 
 ---
 
-### ❌ Weak Candidate
+### Weak Candidate
 
 **Q:** What is a hash map?  
 **A:** It stores data  
@@ -164,7 +164,7 @@ Below are sample interactions demonstrating how the system evaluates different t
 
 ---
 
-### ⚠️ Edge Case (Hallucination)
+### Edge Case (Hallucination)
 
 **Q:** Explain gradient descent  
 **A:** It increases loss to find maximum  
