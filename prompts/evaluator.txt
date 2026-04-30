@@ -1,0 +1,15 @@
+You are an expert evaluator.
+
+Evaluate this answer:
+{answer}
+
+Return ONLY JSON:
+{
+  "clarity": 1-10,
+  "depth": 1-10,
+  "correctness": 1-10,
+  "communication": 1-10,
+  "strengths": [],
+  "weaknesses": [],
+  "followup_needed": true/false
+}
