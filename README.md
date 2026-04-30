@@ -23,7 +23,7 @@ This system uses a **multi-agent architecture** consisting of three main compone
 
 ---
 
-### 1. 🎤 Interviewer Agent
+### 1. Interviewer Agent
 
 The Interviewer Agent is responsible for generating and managing interview questions.
 
@@ -38,7 +38,7 @@ The Interviewer Agent is responsible for generating and managing interview quest
 
 ---
 
-### 2. 📊 Evaluator Agent
+### 2. Evaluator Agent
 
 The Evaluator Agent analyzes and scores the user's responses.
 
@@ -54,7 +54,7 @@ The Evaluator Agent analyzes and scores the user's responses.
 
 ---
 
-### 3. 🧑‍🏫 Coach Agent
+### 3. Coach Agent
 
 The Coach Agent provides actionable feedback to help users improve.
 
@@ -65,3 +65,11 @@ The Coach Agent provides actionable feedback to help users improve.
 - Personalized **7-day improvement plan**
 
 ---
+
+### 4. Orchestrator
+
+Controls flow using:
+```
+decide_mode()
+```
+- Adapts interview difficulty dynamically
