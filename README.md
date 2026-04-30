@@ -12,3 +12,9 @@ pip install -r requirements.txt
 ```
 Groq(api_key="YOUR_API_KEY")
 ```
+### Run the app
+```
+streamlit run app.py
+```
+
+## 🧠 Architecture Overview
